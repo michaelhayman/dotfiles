@@ -2,6 +2,7 @@ export PATH=$HOME/bin:/sbin:/opt/local/lib/postgresql93/bin:/usr/sbin:/usr/local
 export PATH=/usr/local/heroku/bin:$PATH
 # macports
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
+export PATH=$HOME/Library/Python/2.7/bin:$PATH
 export MANPATH=$MANPATH:/opt/local/share/man
 export PYTHONPATH=/opt/local/lib/python2.6/site-packages:${PYTHONPATH}
 
