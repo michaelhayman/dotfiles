@@ -15,7 +15,7 @@
 	whitespace = red reverse
 [user]
 	name = Michael Hayman
-	email = michael.hayman@zoocasa.com
+	email = michael@springbox.ca
 [gui]
 	fontui   = -family Inconsolata -size 14 -weight normal -slant roman -underline 0 -overstrike 0
 	fontdiff = -family Inconsolata -size 14 -weight normal -slant roman -underline 0 -overstrike 0
