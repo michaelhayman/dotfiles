@@ -278,7 +278,7 @@ map <leader>f :CommandTFlush<cr>\|:CommandT<cr>
 map <leader>F :CommandTFlush<cr>\|:CommandT %%<cr>
 
 " remove certain files from command-t
-set wildignore=.o,.obj,.git,node_modules/**
+set wildignore=.o,.obj,.git,node_modules/**,tmp/**,*.png,*.gif,*.jpg
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " SWITCH BETWEEN TEST AND PRODUCTION CODE
