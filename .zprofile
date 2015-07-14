@@ -1,10 +1,16 @@
+# adding $PATH at the end means anything before it will be searched first.
 export PATH=$HOME/bin:/sbin:/opt/local/lib/postgresql93/bin:/usr/sbin:/usr/local/bin:$HOME/.node/bin:$PATH
 export PATH=/usr/local/heroku/bin:$PATH
+export PATH=/opt/local/android/tools:$PATH
+export PATH=/opt/local/android/platform-tools:$PATH
 # macports
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 export PATH=$HOME/Library/Python/2.7/bin:$PATH
 export MANPATH=$MANPATH:/opt/local/share/man
 export PYTHONPATH=/opt/local/lib/python2.6/site-packages:${PYTHONPATH}
+export PATH=$HOME/npm/bin:$PATH
+#android
+#ANDROID_HOME is not set and "android" command not in your PATH. You must fulfill at least one of these conditions.
 
 export PAGER="/usr/bin/less -S"
 export SVN_EDITOR='vim -c "set wrap linebreak textwidth=72"'
