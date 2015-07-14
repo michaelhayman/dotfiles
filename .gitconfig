@@ -39,6 +39,12 @@
     cp       = cherry-pick
     commit   = commit --verbose
     # third party
+    ap = add -p
+    rc = rebase --continue
+    ra = rebase --abort
+    rs = rebase --skip
+    r10 = rebase -i head~10
+    zr = checkout zoophoria-responsive
     st = status
     ci = commit
     co = checkout
@@ -80,7 +86,8 @@
     frune = fetch --prune
     ocherry  = "!sh -c 'BRANCH=${1:-`git rev-parse --abbrev-ref HEAD`}; git cherry -v $BRANCH origin/$BRANCH'"
     odiff    = "!sh -c 'git diff $@ origin/${1:-`git rev-parse --abbrev-ref HEAD`}'"
-    cleanup = !git frune && git prune && git gc --aggressive
+    cleanup  = "!git frune && git prune && git gc --aggressive"
+    pushup   = "!sh -c 'git push --set-upstream ${1:-origin} `git rev-parse --abbrev-ref HEAD`' -"
 [pack]
     threads = 0
 [branch]
