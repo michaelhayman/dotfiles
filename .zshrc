@@ -67,9 +67,9 @@ unsetopt menu_complete
 zmodload -a zsh/stat stat
 zmodload -a zsh/zpty zpty
 zmodload -a zsh/zprof zprof
-if [ -z "$mapfile" ]; then
-	zmodload -ap zsh/mapfile mapfile
-fi
+# if [ -z "$mapfile" ]; then
+# 	zmodload -ap zsh/mapfile mapfile
+# fi
 
 alias ll='ls -l'
 alias dir='ls'
@@ -170,7 +170,7 @@ fpath=(~/.zsh/zsh-completions/src $fpath)
 
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-compinit
+# compinit
 
 function dict () {
   if [[ $1 == (d|m) ]]; then
