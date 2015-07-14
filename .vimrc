@@ -63,6 +63,8 @@ set wildmode=longest,list
 set wildmenu
 let mapleader=","
 set term=xterm-256color
+" yank to system clipboard
+set clipboard=unnamed
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " CUSTOM AUTOCMDS
@@ -119,7 +121,7 @@ augroup END
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " allow closing of windows with ctrl-w
 " map <leader>c :bp|bd #<cr>
-nnoremap <C-p> :bp\|bd #<CR>
+nnoremap <C-p> :bp\|bd! #<CR>
 map <leader>y "*y
 map <leader>j :bp<cr>
 map <leader>k :bn<cr>
@@ -278,7 +280,7 @@ map <leader>f :CommandTFlush<cr>\|:CommandT<cr>
 map <leader>F :CommandTFlush<cr>\|:CommandT %%<cr>
 
 " remove certain files from command-t
-set wildignore=.o,.obj,.git,node_modules/**,tmp/**,*.png,*.gif,*.jpg
+set wildignore=.o,.obj,.git,**/node_modules/**,tmp/**,*.png,*.gif,*.jpg,*.jpeg,*.gz,
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " SWITCH BETWEEN TEST AND PRODUCTION CODE
