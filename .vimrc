@@ -106,10 +106,10 @@ augroup END
 " COLOR
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 :set t_Co=256 " 256 colors
-:set background=light
+:set background=dark
 " :color grb256
-:color solarized
-" colorscheme solarized
+" :color solarized
+colorscheme solarized
 " syntax on
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " STATUS LINE
