@@ -4,6 +4,7 @@ alias heroku='nocorrect heroku'
 alias vim='nocorrect vim'
 alias pstree='nocorrect pstree'
 alias gwc='git whatchanged -p --abbrev-commit --pretty=medium'
+alias logtoday="git log --pretty=format:\"• %s%n•%b\" --since=\"6am\" | sed 's/^•$//g'"
 
 export EDITOR=vi
 
