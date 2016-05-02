@@ -417,3 +417,15 @@ endfunction
 
 nnoremap <leader>f :call SelectaCommand(FindWithWildignore(), "", ":e")<cr>
 
+function! ListActiveBuffers()
+  let bufferlist = []
+  for l:bni in range(bufnr("$"), 1, -1)
+    if buflisted(l:bni)
+      call add(bufferlist, bufname(l:bni))
+    endif
+  endfor
+  return "echo ".join(bufferlist, ' ')." | tr ' ' '\\n' "
+endfunction
+
+nnoremap <leader>b :call SelectaCommand(ListActiveBuffers(), "", ":e")<cr>
+
